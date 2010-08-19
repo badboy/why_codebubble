@@ -1,0 +1,3 @@
+sinatra --version '>= 1.0'
+mustache --version '>= 0.11.2'
+coderay --version '>= 0.9.3'
