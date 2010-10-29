@@ -8,10 +8,10 @@
 .CodeRay {
   background-color: #f8f8f8;
   border: 1px solid silver;
-  font-family: 'Simpsonfont', 'Courier New', 'Terminal', monospace;
+  font-family: 'Benwrite', 'Simpsonfont', 'Courier New', 'Terminal', monospace;
   color: #000;
 }
-.CodeRay pre { margin: 0px; font-family: 'Simpsonfont'; }
+.CodeRay pre { margin: 0px; font-family: 'Benwrite', 'Simpsonfont'; }
 
 div.CodeRay { }
 
