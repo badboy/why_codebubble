@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Benwrite';
+  font-family: 'Simpsonfont';
   font-style: normal;
   font-weight: normal;
-  src: local(Benwrite) url('font/Benwrite.ttf') format('truetype');
+  src: local(Simpsonfont) url('font/Simpsonfont.ttf') format('truetype');
 }
 
 .CodeRay {
   background-color: #f8f8f8;
   border: 1px solid silver;
-  font-family: 'Benwrite', 'Courier New', 'Terminal', monospace;
+  font-family: 'Simpsonfont', 'Courier New', 'Terminal', monospace;
   color: #000;
 }
-.CodeRay pre { margin: 0px; font-family: 'Benwrite'; }
+.CodeRay pre { margin: 0px; font-family: 'Simpsonfont'; }
 
 div.CodeRay { }
 
