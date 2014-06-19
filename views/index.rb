@@ -3,7 +3,7 @@ class CodeBubble
     class Index < Layout
       def language_options
         CodeRay::Scanners.list.sort.map { |scanner|
-          %{<option value="#{scanner}"#{scanner==@lang?' selected="selected"':''}>#{scanner}</option>}
+          %{<option value="#{scanner}"#{scanner.to_s==@lang?' selected="selected"':''}>#{scanner}</option>}
         }.join("\n")
       end
 

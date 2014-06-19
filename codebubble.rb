@@ -6,17 +6,16 @@ require 'sinatra/base'
 require 'mustache/sinatra'
 
 class CodeBubble < Sinatra::Base
-  require 'views/layout'
+  require_relative 'views/layout'
 
   register Mustache::Sinatra
 
-  dir = File.dirname(File.dirname(__FILE__))
-  set :public, "#{dir}/public"
+  set :public_dir, "./public"
   enable :static
 
   set :mustache, {
-    :views => 'views/',
-    :templates => 'templates/'
+    :views => './views/',
+    :templates => './templates/'
   }
 
   get '/' do
@@ -29,7 +28,7 @@ class CodeBubble < Sinatra::Base
 
   post '/' do
     @code_raw = params[:code]
-    @lang = params[:lang] || :ruby
+    @lang = params[:lang] || 'ruby'
 
     if @code_raw && @code_raw.length > 0
       @code = CodeRay.scan(@code_raw, @lang).div
